@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="com.jet.dabo.mapper.UserMapper">
+
+    <select id="getUserDBByID" resultType="UserDB">
+        select
+            UserID as UserID,
+            Gender as Gender,
+            Created_Time as CreatedTime
+        from dabo.dabo_user
+        where UserID=#{id}
+    </select>
+
+</mapper>
