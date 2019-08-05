@@ -5,7 +5,7 @@
 - Action
   - 消息名字，e.g. login, logout
 - Params
-  - `每个消息的自定义字段
+  - `每个消息的自定义字段, json格式字符串
 - ReqToken
   - 请求token
 - Timestamp
