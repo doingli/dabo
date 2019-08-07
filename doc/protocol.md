@@ -2,17 +2,19 @@
 
 ## 上行
 #### Restful
-- Action
+- action
   - 消息名字，e.g. login, logout
-- Params
+- userID
+  - 用户唯一ID, 从67800开始
+- params
   - `每个消息的自定义字段, json格式字符串
-- ReqToken
+- reqToken
   - 请求token
-- Timestamp
+- timestamp
   - 时间戳，取当前值
-- DevID
+- devID
   - 客户设备id, 可用来处理多段登入
-- SN
+- sn
   - 请求序列号，可用来处理请求重放
 
 ####  算法
@@ -31,3 +33,14 @@ response中为json格式的回复正文
 - Result, 错误码，类型为int32
 - Data, 具体的回复内容
 
+## Login
+
+#### Request
+
+​	accout: 登入手机号, 11位数字，.e.g. 19946257887
+
+​	loginToken: 登入Token, md5(password)
+
+#### Response
+
+​	None
